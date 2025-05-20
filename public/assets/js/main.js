@@ -218,3 +218,165 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+
+  function updateGradeLabel(tabGroup, labelId, labelA, labelB) {
+    const tab1 = document.querySelector(`#${tabGroup}1-tab`);
+    const tab2 = document.querySelector(`#${tabGroup}2-tab`);
+    const label = document.getElementById(labelId);
+
+    if (tab1 && tab2 && label) {
+      tab1.addEventListener("click", () => label.textContent = labelA);
+      tab2.addEventListener("click", () => label.textContent = labelB);
+    }
+  }
+  updateGradeLabel('free', 'free-grade', 'L.1 Grade A', 'L.1 Grade B');
+  updateGradeLabel("business", "business-grade", "L.1 Grade A", "L.1 Grade B");
+  updateGradeLabel("developer", "developer-grade", "L.1 Grade A", "L.1 Grade B");
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabButton = document.getElementById("free1-tab");
+    tabButton.addEventListener("click", () => {
+      const list = document.querySelectorAll("#gradeAList li");
+      list.forEach(li => li.innerHTML = li.textContent); // Reset isi
+      animateListItems(list);
+    });
+
+    function animateListItems(items) {
+      let i = 0;
+      function typeItem() {
+        if (i < items.length) {
+          const text = items[i].textContent;
+          items[i].innerHTML = "";
+          let j = 0;
+          function typeChar() {
+            if (j < text.length) {
+              items[i].innerHTML += text.charAt(j);
+              j++;
+              setTimeout(typeChar, 20);
+            } else {
+              i++;
+              setTimeout(typeItem, 100); // jeda antar item
+            }
+          }
+          typeChar();
+        }
+      }
+      typeItem();
+    }
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const businessAButton = document.getElementById("business1-tab");
+    const businessBButton = document.getElementById("business2-tab");
+
+    businessAButton.addEventListener("click", () => {
+      const list = document.querySelectorAll("#businessGradeAList li");
+      resetAndAnimate(list);
+    });
+
+    businessBButton.addEventListener("click", () => {
+      const list = document.querySelectorAll("#businessGradeBList li");
+      resetAndAnimate(list);
+    });
+
+    function resetAndAnimate(items) {
+      items.forEach(li => li.innerHTML = li.textContent); // Reset isi sebelum animasi
+      animateListItems(items);
+    }
+
+    function animateListItems(items) {
+      let i = 0;
+      function typeItem() {
+        if (i < items.length) {
+          const text = items[i].textContent;
+          items[i].innerHTML = "";
+          let j = 0;
+          function typeChar() {
+            if (j < text.length) {
+              items[i].innerHTML += text.charAt(j);
+              j++;
+              setTimeout(typeChar, 20); // kecepatan huruf
+            } else {
+              i++;
+              setTimeout(typeItem, 80); // jeda antar item
+            }
+          }
+          typeChar();
+        }
+      }
+      typeItem();
+    }
+  });
+
+
+  // ────── helper ──────
+  function resetAndAnimate(items) {
+    items.forEach(li => li.innerHTML = li.textContent);  // reset isi
+    animateListItems(items);
+  }
+
+  function animateListItems(items) {
+    let i = 0;
+    function typeItem() {
+      if (i < items.length) {
+        const text = items[i].textContent;
+        items[i].innerHTML = "";
+        let j = 0;
+        function typeChar() {
+          if (j < text.length) {
+            items[i].innerHTML += text.charAt(j);
+            j++;
+            setTimeout(typeChar, 20);   // kecepatan huruf
+          } else {
+            i++;
+            setTimeout(typeItem, 80);   // jeda antar‑item
+          }
+        }
+        typeChar();
+      }
+    }
+    typeItem();
+  }
+
+  // ────── Developer ──────
+  document.getElementById("developer1-tab").addEventListener("click", () => {
+    const list = document.querySelectorAll("#developerGradeAList li");
+    resetAndAnimate(list);
+  });
+
+  document.getElementById("developer2-tab").addEventListener("click", () => {
+    const list = document.querySelectorAll("#developerGradeBList li");
+    resetAndAnimate(list);
+  });
+
+  // (jika Business & Free sudah dipasang sebelumnya, script‑nya boleh tetap digabung di sini)
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let subject = document.getElementById("subject").value.trim();
+  let message = document.getElementById("message").value.trim();
+
+  let phoneNumber = "62895396117587";
+
+  let whatsappMessage = `Halo, saya ingin menghubungi Sila Agung Agrapana.\n\n` +
+                        `Nama: ${name}\n` +
+                        `Email: ${email}\n` +
+                        `Subjek: ${subject}\n` +
+                        `Pesan: ${message}`;
+
+  let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  window.open(url, "_blank");
+});
+
+
+
+
+
+
