@@ -50,20 +50,16 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#about">Kontruksi</a></li>
-          <li><a href="#pricing">pricelist</a></li>
-<<<<<<< HEAD
-          <li><a href="custom">custom</a></li>    
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#about">Kontruksi</a></li><<<<<<< HEAD
+          <li><a href="custom">custom</a         <li><a href="blog.html">Blog</a></li>
           
-=======
-          <li><a href="custom">custom</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+
+          <li><a href="custom">custom</a></li     <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
->>>>>>> b337bb6 (tambah fitur)
+
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        xl-none bi bi-list"></i>
       </nav>
 
 
@@ -146,18 +142,7 @@
             <h3>Bangun Masa Depan Bersama Ahlinya</h3>
             <p>Kami menyediakan layanan konsultasi, konstruksi, dan arsitektur terintegrasi untuk mewujudkan proyek Anda secara efisien, tepat waktu, dan sesuai visi. Didukung oleh tim ahli yang berpengalaman dan inovatif.</p>
           </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-<<<<<<< HEAD
-         
-=======
-
->>>>>>> b337bb6 (tambah fitur)
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
+          <div class="col-xl-3 cta-b/section><!-- /Call To Action Section -->
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -685,7 +670,7 @@
             </div>
 =======
 
-                  <!-- <li class="na">*Harga Per 2x revisi</li> -->
+                  <!-- <li class="na">*Harga revisi</li> -->
                   <!-- <li class="na">-</li> -->
                 </ul>
                 <div class="btn-wrap">
@@ -745,7 +730,7 @@
 <<<<<<< HEAD
                 <div class="row gy-4">
 
-                  <div class="col-md-6">
+      <div class="col-md-6">
                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
                   </div>
 
@@ -775,7 +760,7 @@
 =======
         </div>
 
-      </section><!-- /Pricing Section -->
+      </section><!-- /Pricingn -->
 
       <!-- Faq Section -->
       <section id="faq" class="faq section">
@@ -827,7 +812,7 @@
             </div>
 >>>>>>> b337bb6 (tambah fitur)
 
-            <div class="col-lg-5 order-1 order-lg-2">
+            <div clas">
               <img src="/assets/img/c202c555-038a-4342-8168-711cc1bae555.jpeg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
             </div>
           </div>
@@ -836,9 +821,7 @@
 
 <<<<<<< HEAD
 =======
-      </section><!-- /Faq Section -->
-
-      <!-- Pricing Section -->
+      </section><!-- /Faq Sectioicing Section -->
       <section id="pricing" class="pricing section light-background">
 
         <!-- Section Title -->
@@ -1190,9 +1173,7 @@
         </div>
 
 >>>>>>> b337bb6 (tambah fitur)
-      </section><!-- /Contact Section -->
-
-  </main>
+      </section><!-- /
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
@@ -1257,10 +1238,23 @@
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
 <<<<<<< HEAD
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/np5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 =======
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bp@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 >>>>>>> b337bb6 (tambah fitur)
+iles -->
+  <script srcbootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
